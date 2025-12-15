@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <title>Privacy Policy – Event Time Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy - Event Time Calculator</title>
-    <link rel="canonical" href="./privacy.html" />
+
+    <meta
+      name="description"
+      content="Privacy Policy for Event Time Calculator."
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -12,129 +16,175 @@
     />
 
     <style>
+      :root {
+        --brand: #0b3b8f;
+        --muted: #6c757d;
+      }
       body {
         background: #f8f9fa;
       }
+      .brand-box {
+        border: 2px solid var(--brand);
+        border-radius: 12px;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: var(--brand);
+        font-weight: 600;
+      }
+      .brand-box:hover {
+        background: rgba(11, 59, 143, 0.05);
+      }
       .card {
-        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+      }
+      footer {
+        background: #fff;
+        border-top: 1px solid #e5e7eb;
       }
       .muted {
-        color: #5f6368;
-      }
-      code {
-        background: rgba(0, 0, 0, 0.04);
-        padding: 2px 4px;
-        border-radius: 4px;
+        color: var(--muted);
       }
     </style>
   </head>
 
-  <body>
-    <nav class="navbar bg-white border-bottom">
-      <div class="container py-2">
-        <a class="navbar-brand h6 mb-0" href="./index.html"
-          >Event Time Calculator</a
+  <body class="d-flex flex-column min-vh-100">
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a href="index.html" class="brand-box">Event Time Calculator</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terms.html">Terms</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <main class="container py-5">
+    <!-- CONTENT -->
+    <main class="container py-5 flex-grow-1">
       <div class="row justify-content-center">
         <div class="col-lg-9">
-          <div class="card shadow-sm">
-            <div class="card-body p-4">
-              <h1 class="h5 mb-2">Privacy Policy</h1>
-              <p class="muted small mb-4">Last updated: 2025-12-13</p>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body p-5">
+              <h1 class="h4 mb-2">Privacy Policy</h1>
+              <p class="muted mb-0">Last updated: 2025-12-13</p>
+            </div>
+          </div>
 
+          <div class="card shadow-sm">
+            <div class="card-body p-4 p-md-5">
               <p class="muted">
-                Event Time Calculator is a Chrome extension that calculates
-                total time spent on events in Google Calendar. This extension is
-                read-only and does not modify calendar data.
+                Event Time Calculator is a Chrome extension that helps you
+                calculate total time spent on events in Google Calendar. The
+                extension is designed to be privacy-first and read-only.
               </p>
 
-              <h2 class="h6 mt-4">Data We Access</h2>
+              <h2 class="h6 mt-4">1. Data We Access</h2>
               <p class="muted mb-2">
-                With your permission, the extension accesses Google Calendar
-                event data needed to perform calculations:
+                When you choose to use the calculator, the extension may access
+                Google Calendar data required for the calculation:
               </p>
               <ul class="muted">
                 <li>Event titles</li>
                 <li>Event start and end times (including all-day events)</li>
               </ul>
 
-              <h2 class="h6 mt-4">How We Use Data</h2>
+              <h2 class="h6 mt-4">2. How We Use Data</h2>
               <p class="muted mb-2">
-                Data is used only to calculate durations and totals that you
-                explicitly request.
+                Data is used only to compute totals that you explicitly request:
               </p>
               <ul class="muted">
-                <li>Compute event duration (start → end)</li>
-                <li>
-                  Compute total time across matching events for the selected
-                  time range
-                </li>
+                <li>Compute duration for each matching event</li>
+                <li>Sum durations across the selected time range</li>
               </ul>
 
-              <h2 class="h6 mt-4">OAuth Scope</h2>
+              <h2 class="h6 mt-4">3. OAuth Scope</h2>
               <p class="muted">
-                The extension requests the following Google API scope:
+                The extension requests Google Calendar read-only access:
+                <br />
                 <code>https://www.googleapis.com/auth/calendar.readonly</code>
               </p>
 
-              <h2 class="h6 mt-4">Processing, Storage, and Sharing</h2>
+              <h2 class="h6 mt-4">4. Processing, Storage, and Sharing</h2>
               <ul class="muted">
                 <li>
-                  <strong>Local processing:</strong> calculations run locally in
-                  your browser.
+                  <strong>Local processing:</strong> calculations run in your
+                  browser.
                 </li>
                 <li>
                   <strong>No server storage:</strong> we do not store your
-                  calendar data on external servers.
+                  calendar data on any server.
                 </li>
                 <li>
-                  <strong>No selling/sharing:</strong> data is not sold or
-                  shared with third parties.
+                  <strong>No selling or sharing:</strong> we do not sell or
+                  share your data with third parties.
                 </li>
                 <li>
-                  <strong>No analytics/tracking:</strong> the extension does not
-                  use analytics, tracking pixels, or ad networks.
+                  <strong>No analytics/tracking:</strong> no tracking pixels, ad
+                  networks, or analytics SDKs are used.
                 </li>
               </ul>
 
-              <h2 class="h6 mt-4">Data Retention</h2>
+              <h2 class="h6 mt-4">5. Data Retention</h2>
               <p class="muted">
-                The extension does not retain your Google Calendar event data
-                outside of runtime memory needed to complete a calculation.
+                The extension does not retain your Google Calendar data beyond
+                the temporary runtime memory needed to complete the calculation.
               </p>
 
-              <h2 class="h6 mt-4">Security</h2>
+              <h2 class="h6 mt-4">6. Security</h2>
               <p class="muted">
-                We follow least-privilege access (read-only scope) and do not
-                transmit calendar data to any external backend. You can revoke
-                access at any time from your Google Account permissions.
+                We follow least-privilege access (read-only scope). You can
+                revoke access anytime from your Google Account permissions.
               </p>
 
-              <h2 class="h6 mt-4">Your Choices</h2>
-              <p class="muted">
-                You can uninstall the extension at any time or revoke access via
-                your Google Account settings.
-              </p>
-
-              <h2 class="h6 mt-4">Contact</h2>
+              <h2 class="h6 mt-4">7. Contact</h2>
               <p class="muted mb-0">
-                Questions about this policy:
+                For privacy questions, contact:
                 <a href="mailto:manuel.demti@gmail.com"
                   >manuel.demti@gmail.com</a
                 >
               </p>
             </div>
           </div>
-
-          <div class="text-center muted small mt-4">
-            <a href="./terms.html">Terms of Service</a>
-          </div>
         </div>
       </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-6 small text-muted">
+            4 Rue du Chinook<br />
+            Gatineau, Canada
+          </div>
+          <div class="col-md-6 text-md-end small text-muted">
+            by Demtili Works 2025
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
