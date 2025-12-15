@@ -93,12 +93,54 @@
 
           <div class="card shadow-sm">
             <div class="card-body p-4 p-md-5">
-              <h2 class="h6 mb-2">Email</h2>
-              <p class="muted mb-4">
-                <a href="mailto:manuel.demti@gmail.com"
-                  >manuel.demti@gmail.com</a
-                >
-              </p>
+              <!-- CONTACT FORM -->
+              <form action="https://formspree.io/f/xeoywgbw" method="POST">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Optional: subject for Formspree email -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="ETC – New contact message"
+                />
+
+                <button type="submit" class="btn btn-primary px-4">
+                  Send message
+                </button>
+              </form>
+
+              <hr class="my-4" />
 
               <h2 class="h6 mb-2">Business Address</h2>
               <p class="muted mb-0">
