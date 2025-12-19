@@ -75,6 +75,7 @@
     <main class="container py-5 flex-grow-1">
       <div class="row justify-content-center">
         <div class="col-lg-9">
+          <!-- Keep the existing top description card -->
           <div class="card shadow-sm mb-4">
             <div class="card-body p-5">
               <h1 class="h3 mb-3">Effortlessly Track time spent on Google Calendar events</h1>
@@ -85,32 +86,42 @@
             </div>
           </div>
 
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h6>Read-only</h6>
-                  <p class="text-muted small mb-0">No event is modified or deleted.</p>
-                </div>
+          <!-- New explicit card for OAuth / Chrome Web Store clarity -->
+          <div class="card shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="h5 mb-3">What TrakkyTime does (and does not do)</h2>
+
+              <div class="mb-3">
+                <h6 class="mb-2">What it does</h6>
+                <ul class="text-muted mb-0">
+                  <li>
+                    Reads your Google Calendar events to calculate total time spent over a selected period (day, week,
+                    month, year, or custom range).
+                  </li>
+                  <li>Uses event titles and start/end date-times to compute totals and a simple breakdown.</li>
+                  <li>Runs calculations locally in your browser for your own use.</li>
+                </ul>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h6>Local processing</h6>
-                  <p class="text-muted small mb-0">No data is sent to any server.</p>
-                </div>
+
+              <div class="mb-0">
+                <h6 class="mb-2">What it does not do</h6>
+                <ul class="text-muted mb-0">
+                  <li>Does not create, edit, delete, or share any calendar events.</li>
+                  <li>Does not sell, transfer, or store your calendar data on external servers.</li>
+                  <li>Does not access data beyond what is needed for time calculations.</li>
+                </ul>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h6>Minimal permissions</h6>
-                  <p class="text-muted small mb-0">Uses calendar.readonly only.</p>
-                </div>
-              </div>
+
+              <hr class="my-4" />
+
+              <p class="small text-muted mb-0">
+                Permissions: TrakkyTime requests Google Calendar <strong>read-only</strong> access
+                (<code>calendar.readonly</code>) to retrieve existing events and calculate totals.
+              </p>
             </div>
           </div>
+
+          <!-- Removed the 3 bottom cards to avoid redundancy -->
         </div>
       </div>
     </main>
