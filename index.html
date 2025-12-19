@@ -75,53 +75,62 @@
     <main class="container py-5 flex-grow-1">
       <div class="row justify-content-center">
         <div class="col-lg-9">
-          <!-- Keep the existing top description card -->
+          <!-- Top description card (kept as-is) -->
           <div class="card shadow-sm mb-4">
             <div class="card-body p-5">
-              <h1 class="h3 mb-3">Effortlessly Track time spent on Google Calendar events</h1>
+              <h1 class="h3 mb-3">Effortlessly track time spent on Google Calendar events</h1>
               <p class="text-muted mb-0">
                 TrakkyTime lets you calculate and track the total duration of recurring events in Google Calendar,
-                accross any time range. Everything runs locally. Read-only access.
+                across any time range. Everything runs locally. Read-only access.
               </p>
             </div>
           </div>
 
-          <!-- New explicit card for OAuth / Chrome Web Store clarity -->
+          <!-- Detailed transparency / compliance card -->
           <div class="card shadow-sm">
             <div class="card-body p-4 p-md-5">
-              <h2 class="h5 mb-3">What TrakkyTime does (and does not do)</h2>
+              <h2 class="h5 mb-3">How TrakkyTime works</h2>
 
-              <div class="mb-3">
-                <h6 class="mb-2">What it does</h6>
+              <p class="text-muted mb-4">
+                TrakkyTime is a lightweight utility designed to help you understand how your time is distributed across
+                activities recorded in Google Calendar. It focuses exclusively on time calculation and transparency,
+                without altering your data.
+              </p>
+
+              <div class="mb-4">
+                <h6 class="mb-2">What the extension does</h6>
                 <ul class="text-muted mb-0">
                   <li>
-                    Reads your Google Calendar events to calculate total time spent over a selected period (day, week,
-                    month, year, or custom range).
+                    Reads existing Google Calendar events to calculate the total duration of matching events over a
+                    selected period (day, week, month, year, or custom date range).
                   </li>
-                  <li>Uses event titles and start/end date-times to compute totals and a simple breakdown.</li>
-                  <li>Runs calculations locally in your browser for your own use.</li>
+                  <li>
+                    Uses only event titles and start/end date-times to compute aggregated totals and a simple per-period
+                    breakdown.
+                  </li>
+                  <li>Processes all calculations locally in your browser for your personal use.</li>
                 </ul>
               </div>
 
-              <div class="mb-0">
-                <h6 class="mb-2">What it does not do</h6>
+              <div class="mb-4">
+                <h6 class="mb-2">What the extension does not do</h6>
                 <ul class="text-muted mb-0">
-                  <li>Does not create, edit, delete, or share any calendar events.</li>
-                  <li>Does not sell, transfer, or store your calendar data on external servers.</li>
-                  <li>Does not access data beyond what is needed for time calculations.</li>
+                  <li>Does not create, edit, delete, or share any Google Calendar events.</li>
+                  <li>Does not store, sell, or transmit your calendar data to external servers.</li>
+                  <li>Does not access information beyond what is strictly required for time calculations.</li>
                 </ul>
               </div>
 
               <hr class="my-4" />
 
               <p class="small text-muted mb-0">
-                Permissions: TrakkyTime requests Google Calendar <strong>read-only</strong> access
-                (<code>calendar.readonly</code>) to retrieve existing events and calculate totals.
+                <strong>Permissions &amp; privacy:</strong> TrakkyTime requests Google Calendar
+                <strong>read-only</strong> access (<code>calendar.readonly</code>) solely to retrieve existing events
+                and compute time totals. No calendar content is modified, and no personal data is retained outside your
+                browser.
               </p>
             </div>
           </div>
-
-          <!-- Removed the 3 bottom cards to avoid redundancy -->
         </div>
       </div>
     </main>
