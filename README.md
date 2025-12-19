@@ -5,6 +5,7 @@ Event Time Calculator is a Chrome extension that helps you calculate event durat
 ## Overview
 
 This extension adds a lightweight panel to Google Calendar that allows you to:
+
 - Calculate the duration of individual events
 - Sum total hours across multiple events or a selected date range
 - Quickly understand how your time is allocated
@@ -35,5 +36,5 @@ The extension is available to download via the Chrome Web Store.
 
 ## Legal
 
-- [Privacy Policy](https://mademti.github.io/event-time-calculator/privacy.html)
-- [Terms of Service](https://mademti.github.io/event-time-calculator/terms.html)
+- [Privacy Policy](https://demtiliworks.com/privacy.html)
+- [Terms of Service](https://demtiliworks.com/terms.html)
